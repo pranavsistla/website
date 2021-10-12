@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import AppBar from '@material-ui/core/AppBar'
-import ToolBar from '@material-ui/core/ToolBar'
+import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/styles'
@@ -288,7 +288,7 @@ useEffect(() => {
         <React.Fragment>
             <ElevationScroll>
                 <AppBar position = 'fixed' color = 'primary'>
-                    <ToolBar className = {classes.customizeToolbar} disableGutters>
+                    <Toolbar className = {classes.customizeToolbar} disableGutters>
                         <div 
                             /*component = {Link} to = '/'*/
                             className = {classes.logoContainer} 
@@ -298,7 +298,7 @@ useEffect(() => {
                             <img alt = 'top logo' src = {toplogo} width = '276' height = '75'/>
                         </div>
                         {matchesSM ? drawer : tabs}
-                    </ToolBar>
+                    </Toolbar>
                 </AppBar>
             </ElevationScroll>
             <div className = {classes.toolbarMargin}/>   
