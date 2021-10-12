@@ -32,13 +32,20 @@ const useStyles = makeStyles(theme => ({
         fontSize: 82,
         color: 'white'
     },
+    highlights: {
+        fontFamily: 'Roboto Mono',
+        fontWeight: 400, 
+        fontSize: 16,
+        color: '#eca5f8'
+    },
     body3: {
         ...theme.typography.body3,
-        fontSize: 30
+        fontSize: 30,
+        marginBottom: '-0.5em'
     },
     body4: {
         ...theme.typography.body4,
-        fontSize: 18,
+        fontSize: 16.5,
         marginBottom: '0.3em',
         lineHeight: 1.5
     },
@@ -150,6 +157,12 @@ const useStyles = makeStyles(theme => ({
     },
     mainSection2:{
         paddingTop:'8em'
+    },
+    about: {
+        ...theme.typography.about,
+        fontSize: 18,
+        marginBottom: '0.3em',
+        lineHeight: 1.5
     }
 }))
 
@@ -888,18 +901,19 @@ export default function LandingPage() {
                             Hey! My name is<br /><div className={classes.body2}>Pranav Sistla</div>
                         </div>
                         <div className={classes.body3}>
-                            Lorem ipsum dolor sit amet, consectetur.
+                            Just a guy mining for some diamonds!
                         </div>
                         <br />
                         <br />
                         <div className={classes.body4}>
                             I am currently studying my 3rd year at BITS Pilani pursuing Electronics & Communication engineering. 
-                            I spend most of my time with the applications of data science and deep learning methods. Furthermore, I 
-                            enjoy designing and developing Frontend and Backend Applications. 
-                            I also worked extensively in the field of Strategy and Operations Consulting especially in the social sector.
-                            I have assisted my clients with developing local and national growth frameworks, business frameworks, 
-                            global sales channels in the B2B market. 
-                            More recently, I leverage data to perform analysis and gain crucial insights to augment my strategies.
+                            I spend most of my time with the applications of <span className = {classes.highlights}>data science</span> and <span className = {classes.highlights}>deep learning</span> methods. Furthermore, I 
+                            enjoy designing and developing <span className = {classes.highlights}>Frontend</span> and <span className = {classes.highlights}>Backend Applications.</span> 
+                        </div>
+                        <div className={classes.body4}>
+                            I also worked extensively in the field of <span className = {classes.highlights}>Strategy & Operations Consulting</span> with a specific focus towards the <span className = {classes.highlights}>social sector</span>.
+                            I have led various domestic and international projects assisting clients with technical as well as strategic advice.
+
                         </div>
                         <br />
                         <a href='https://www.linkedin.com/in/pranav-sistla-98a46a1b0/' target="_blank">
@@ -930,7 +944,7 @@ export default function LandingPage() {
                         </div>
                         <ColoredLine color='#ba68c8' margin='8em' />
                     </Grid>
-                    <div className={classes.body4}>
+                    <div className={classes.about}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -943,7 +957,7 @@ export default function LandingPage() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                 </Grid>
-                <Grid item style={{ width: '28em', height: '27em', backgroundColor: 'gray', marginTop: '11.5em', marginLeft: '3em' }}>
+                <Grid item style={{ width: '28em', height: '27em', backgroundColor: 'gray', marginTop: '10.3em', marginLeft: '3em' }}>
                     <img alt='me' src={me}/>
                 </Grid>
             </Grid>

@@ -40,11 +40,11 @@ export default createTheme({
         body3: {
             fontFamily: 'Roboto',
             fontWeight: 900,
-            color: '#6993cb'
+            color: '#9ba8bb'
         },
         body4: {
             fontFamily: 'Roboto',
-            color: '#6993cb',
+            color: '#9ba8bb',
             fontWeight: 300
         },
         heading: {
@@ -57,6 +57,11 @@ export default createTheme({
         },
         contactcompany: {
             fontFamily: 'Roboto Mono',
+            fontWeight: 300
+        },
+        about: {
+            fontFamily: 'Roboto',
+            color: 'white',
             fontWeight: 300
         }
     }
